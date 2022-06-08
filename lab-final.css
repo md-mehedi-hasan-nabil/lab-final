@@ -5,52 +5,63 @@
 }
 
 body {
-  padding: 10px;
+  padding: 1rem 2rem;
 }
 
 h1 {
   text-align: center;
-  margin: 12px 0;
+  margin:1rem 0;
 }
 
 section {
   display: grid;
-  column-gap: 50px;
+  gap: 1rem;
   grid-template-columns: auto auto auto;
 }
 
 article {
   background-color: #999999;
   padding: 0 10px 10px;
+  border: 3px solid black;
 }
 
 article h2 {
   text-align: right;
+  display: flex;
+  justify-content: end;
 }
 
-article h2 span:nth-child(1) {
+article h2 div {
+  margin-right: -13px;
+  margin-top: -3px;
+  border: 3px solid black;
+}
+
+.title1 {
   background-color: #d79798;
+  padding: 0.5rem;
 }
 
-article h2 span:nth-child(2) {
-  background-color: #C14543;
+.title2 {
+  background-color: #c14543;
+  padding: 0.5rem;
 }
 
-article h2 span:nth-child(3) {
-  background-color: #E5D099;
+.title3 {
+  background-color: #e5d099;
+  padding: 0.5rem;
 }
 
- /* For tablets: */
-@media only screen and (max-width: 600px) {
-    section {
-        grid-template-columns: auto auto;
-        gap: 1rem;
-    }
+/* For tablets: */
+@media only screen and (max-width: 768px) {
+  section {
+    grid-template-columns: auto auto;
+  }
 }
 
- /* For mobile: */
+/* For mobile: */
 @media only screen and (max-width: 480px) {
-    section {
-        grid-template-columns: auto;
-    }
+  section {
+    grid-template-columns: auto;
+  }
 }
