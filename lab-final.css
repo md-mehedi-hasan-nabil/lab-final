@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin: 12px 0;
+}
+
+section {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+}
+
+article {
+  background-color: #999999;
+  padding: 0 10px 10px;
+}
+
+article h2 {
+  text-align: right;
+}
+
+article h2 span:nth-child(1) {
+  background-color: #d79798;
+}
+
+article h2 span:nth-child(2) {
+  background-color: #C14543;
+}
+
+article h2 span:nth-child(3) {
+  background-color: #E5D099;
+}
+
+ /* For tablets: */
+@media only screen and (max-width: 600px) {
+    section {
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+}
+
+ /* For mobile: */
+@media only screen and (max-width: 480px) {
+    section {
+        grid-template-columns: auto;
+    }
+}
